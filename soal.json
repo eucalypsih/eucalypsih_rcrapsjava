@@ -1,0 +1,153 @@
+// Menggunakan keterangan (humble/kenjougo) untuk memperjelas bahwa frasa ini digunakan saat pembicara merendahkan diri sendiri di hadapan lawan bicara.
+// Saya ingin membuat pilihan salah dalam bahasa Jepang agar tingkat kesulitan kuisnya lebih tinggi?
+// Saya ingin membuat format JSON untuk kata kerja hormat dari kegiatan lain (seperti makan, melihat, atau berbicara)
+// kata kerja lampau (went) karena frasa ini menyatakan kejadian yang sudah terjadi.
+[
+  {
+    "frasaJepang": "ご飯を食べる (Gohan wo taberu)",
+    "artiBenar": "eat rice",
+    "pilihanSalah": ["drink water", "sleep", "walk"]
+  },
+  {
+    "frasaJepang": "朝ご飯を食べる (Asagohan wo taberu)",
+    "artiBenar": "eat breakfast",
+    "pilihanSalah": ["skip breakfast", "cook", "shop"]
+  },
+  {
+    "frasaJepang": "ご飯を召し上がる (Gohan wo meshiagaru) (honorific/sonkeigo - dictionary form) Bentuk Kamus / Dasar (Present) Bentuk Hormat (Sonkeigo - Orang Lain yang Makan)Gunakan kata kerja 召し上がる (Meshiagaru).",
+    "artiBenar": "eat a meal",
+    "pilihanSalah": ["cook a meal", "buy a meal", "wash the dishes"]
+  },
+  {
+    "frasaJepang": "ご飯を召し上がりました (Gohan wo meshiagarimashita) (honorific/sonkeigo) Bentuk Sopan Akhiran -mashita (Past)",
+    "artiBenar": "ate a meal",
+    "pilihanSalah": ["cooked a meal", "bought a meal", "washed the dishes"]
+  },
+  {
+    "frasaJepang": "ご飯を召し上がる (Gohan wo meshiagaru) (honorific/sonkeigo - dictionary form)",
+    "artiBenar": "eat a meal",
+    "pilihanSalah": ["cook a meal", "buy a meal", "wash the dishes"]
+  },
+  {
+    "frasaJepang": "ご飯を召し上がった (Gohan wo meshiagatta) (honorific/sonkeigo - casual past)",
+    "artiBenar": "ate a meal",
+    "pilihanSalah": ["cooked a meal", "bought a meal", "washed the dishes"]
+  },
+  {
+    "frasaJepang": "ご飯をいただく (Gohan wo itadaku) (humble/kenjougo - dictionary form) Bentuk Kamus / Dasar (Present) Bentuk Rendah Hati (Kenjougo - Saya yang Makan) Gunakan kata kerja いただく (Itadaku).",
+    "artiBenar": "eat a meal",
+    "pilihanSalah": ["cook a meal", "buy a meal", "wash the dishes"]
+  },
+  {
+    "frasaJepang": "ご飯をいただきます (Gohan wo itadakimasu) (humble/kenjougo) Bentuk Sopan Akhiran -masu (Present)",
+    "artiBenar": "eat a meal",
+    "pilihanSalah": ["cook a meal", "buy a meal", "wash the dishes"]
+  },
+  {
+    "frasaJepang": "ご飯 te をいただきました (Gohan wo itadakimashita) (humble/kenjougo) Bentuk Sopan Akhiran -mashita (Past)",
+    "artiBenar": "ate a meal",
+    "pilihanSalah": ["cooked a meal", "bought a meal", "washed the dishes"]
+  },
+  {
+    "frasaJepang": "ご飯をいただいた (Gohan wo itadaita) (humble/kenjougo - casual past) Bentuk Kasual Lampau (Past)",
+    "artiBenar": "ate a meal",
+    "pilihanSalah": ["cooked a meal", "bought a meal", "washed the dishes"]
+  },
+  {
+    "frasaJepang": "水を飲む (Mizu wo nomu)",
+    "artiBenar": "drink water",
+    "pilihanSalah": ["eat rice", "read a book", "listen to music"]
+  },
+  {
+    "frasaJepang": "本を読む (Hon wo yomu)",
+    "artiBenar": "read a book",
+    "pilihanSalah": ["listen to music", "write a letter", "watch TV"]
+  },
+  {
+    "frasaJepang": "音楽を聴く (Ongaku wo kiku)",
+    "artiBenar": "listen to music",
+    "pilihanSalah": ["sing a song", "watch a movie", "play games"]
+  },
+  {
+    "frasaJepang": "日本語を勉強する (Nihongo wo benkyou suru)",
+    "artiBenar": "study Japanese",
+    "pilihanSalah": ["teach English", "speak Japanese", "read a comic"]
+  },
+  {
+    "frasaJepang": "学校に行く (Gakkou ni iku)",
+    "artiBenar": "go to school",
+    "pilihanSalah": ["go home", "go to the park", "go to the office"]
+  },
+  { // kombinasi data JSON untuk frasa 学校にいらっしゃる (Gakkou ni irassharu) dalam bentuk kamus/dasar hormat (Sonkeigo dictionary form)
+    "frasaJepang": "学校にいらっしゃる (Gakkou ni irassharu)",
+    "artiBenar": "go to school (honorific/sonkeigo - dictionary form)",
+    "pilihanSalah": ["go home", "go to the park", "go to the office"]
+  },
+  {
+    "frasaJepang": "学校にいらっしゃいます (Gakkou ni irasshaimasu)",
+    "artiBenar": "go to school (honorific/sonkeigo)",
+    "pilihanSalah": ["go home", "go to the park", "go to the office"]
+  },
+  { // Saya ingin dibuatkan format serupa untuk bentuk rendah hati Kenjougo 謙譲語 seperti Gakkou ni mairimasu
+    "frasaJepang": "学校に参ります (Gakkou ni mairimasu)",
+    "artiBenar": "go to school (humble/kenjougo)",
+    "pilihanSalah": ["go home", "go to the park", "go to the office"]
+  },
+  { // Mairu (参る): Bentuk kamus dari mairimasu
+    "frasaJepang": "学校に参る (Gakkou ni mairu)",
+    "artiBenar": "go to school (humble/kenjougo - dictionary form)",
+    "pilihanSalah": ["go home", "go to the park", "go to the office"]
+  },
+  {
+    "frasaJepang": "学校にいらっしゃいました (Gakkou ni irasshaimashita)",
+    "artiBenar": "went to school (honorific/sonkeigo)",
+    "pilihanSalah": ["went home", "went to the park", "went to the office"]
+  },
+  { // kombinasi data JSON untuk frasa 学校にいらっしゃった (Gakkou ni irasshatta) dalam bentuk kasual lampau hormat (Sonkeigo casual past form)
+    "frasaJepang": "学校にいらっしゃった (Gakkou ni irasshatta)",
+    "artiBenar": "went to school (honorific/sonkeigo - casual past)",
+    "pilihanSalah": ["went home", "went to the park", "went to the office"]
+  },
+  { // Saya ingin dibuatkan format Kenjougo untuk bentuk lampau (sudah pergi)
+// kombinasi data JSON untuk frasa 学校に参りました (Gakkou ni mairimashita) dalam bentuk rendah hati lampau (Kenjougo past tense)
+    "frasaJepang": "学校に参りました (Gakkou ni mairimashita)",
+    "artiBenar": "went to school (humble/kenjougo)",
+    "pilihanSalah": ["went home", "went to the park", "went to the office"]
+  },
+  { // Kasual Lampau (Past)
+    // Maitta (参った): Bentuk lampau kasual (ta-form) dari mairu.
+    "frasaJepang": "学校に参った (Gakkou ni maitta)",
+    "artiBenar": "went to school (humble/kenjougo - casual past)",
+    "pilihanSalah": ["went home", "went to the park", "went to the office"]
+  },
+  {
+    "frasaJepang": "映画を見る (Eiga wo miru)",
+    "artiBenar": "watch a movie",
+    "pilihanSalah": ["take a photo", "read a book", "look at the sky"]
+  },
+  {
+    "frasaJepang": "日本語で話す (Nihongo de hanasu)",
+    "artiBenar": "speak in Japanese",
+    "pilihanSalah": ["write in Japanese", "study Japanese", "listen to Japanese"]
+  },
+  {
+    "frasaJepang": "写真を撮る (Shashin wo toru)",
+    "artiBenar": "take a photo",
+    "pilihanSalah": ["paint a picture", "buy a camera", "watch a video"]
+  },
+  {
+    "frasaJepang": "コーヒーを飲む (Koohii wo nomu)",
+    "artiBenar": "drink coffee",
+    "pilihanSalah": ["make coffee", "drink tea", "eat bread"]
+  },
+  {
+    "frasaJepang": "手紙を書く (Tegami wo kaku)",
+    "artiBenar": "write a letter",
+    "pilihanSalah": ["read a letter", "send an email", "buy a book"]
+  },
+  {
+    "frasaJepang": "家へ帰る (Ie he kaeru)",
+    "artiBenar": "go home",
+    "pilihanSalah": ["go out", "buy a house", "clean the room"]
+  }
+]

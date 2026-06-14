@@ -1,0 +1,55 @@
+# clear_caches.yml
+name: Clear Caches
+
+# --- LETAKKAN DI SINI (LEVEL ROOT) ---
+# env:
+#   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+# Trigger ini berjalan setelah workflow "Build and Release Multiple Apps" selesai
+on:
+  workflow_run:
+    workflows: ["Build and Release Multiple Apps"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  actions: write  # Izin untuk menghapus cache
+
+jobs:
+  clear-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clear cache
+        uses: actions/github-script@v9 # Sekarang v6 pun dipaksa jalan di Node.js 24
+        with:
+          script: |
+            console.log("Starting cache cleanup process")
+            try {
+              // Mendapatkan daftar cache
+              const caches = await github.rest.actions.getActionsCacheList({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+              })
+
+              // Mengecek apakah ada cache
+              if (caches.data.actions_caches.length === 0) {
+                console.log("No caches found to delete.")
+              } else {
+                // Loop melalui semua cache dan hapus satu per satu
+                for (const cache of caches.data.actions_caches) {
+                  console.log(`Deleting cache ID: ${cache.id}, key: ${cache.key}`)
+                  await github.rest.actions.deleteActionsCacheById({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    cache_id: cache.id,
+                  })
+                }
+                console.log("All caches have been deleted.")
+              }
+            } catch (error) {
+              // Menangani error selama proses penghapusan cache
+              console.error("Error occurred while clearing caches:", error)
+            }
+# ... (sisa kode JavaScript di bawahnya tetap sama) ...
+

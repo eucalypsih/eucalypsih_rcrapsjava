@@ -1,0 +1,17 @@
+[
+  {
+    "frasaJepang": "ご飯を食べる",
+    "artiBenar": "eat rice",
+    "pilihanSalah": ["drink water", "sleep", "walk"]
+  },
+  {
+    "frasaJepang": "朝ご飯を食べる",
+    "artiBenar": "eat breakfast",
+    "pilihanSalah": ["skip breakfast", "cook", "shop"]
+  },
+  {
+    "frasaJepang": "水を飲む",
+    "artiBenar": "drink water",
+    "pilihanSalah": ["eat rice", "read a book", "listen to music"]
+  }
+]

@@ -40,6 +40,11 @@ source $PRERIX/etc/bash.bashrc
 >
 <br>
 
+```
+micro mi_jackson_java/app/src/main/java/org/example/App.java
+```
+`micro mi_jackson_java/app/src/main/java/org/example/App.java`
+
 # plugins
 
 > <br>
